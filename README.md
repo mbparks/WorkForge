@@ -10,9 +10,9 @@ It combines three related ideas into one cohesive workflow:
 
 ## Current version
 
-`v2.0 MVP`
+`v2.0.1 MVP`
 
-The app displays the version number in the left header so the current build can be verified at runtime.
+This hotfix restores startup and button functionality after the v2.0 MVP build exposed initialization-order bugs.
 
 ## How to run
 
@@ -28,22 +28,19 @@ No build step, server, package manager, or external dependency is required.
 - Local autosave using browser localStorage
 - JSON project export
 - JSON project import
-- Project metadata and suggested backup filename
+- Project metadata
 - Job traveler builder
 - Procedure composer
 - Rough-step-to-controlled-step converter
-- Step-level warnings, tools, materials, verification, evidence, and hold points
-- Traveler execution with done state, result, initials, actual notes, and evidence text
+- Step-level warnings, verification, evidence, and hold points
+- Traveler execution with done state, result, initials, notes, and evidence text
 - Traveler completion percentage
-- Search and filters for jobs, procedures, labels, assets, tools, and archive
+- Search and filters for major sections
 - Asset records
 - Parts and tools records
 - Label designer
 - Label generation from jobs, procedures, assets, tools, and parts
-- Job packet label generation
-- In-browser QR SVG generation
 - Printable traveler packet
-- Printable combined packet with labels
 - Printable label sheet
 - Reports tab with status and asset-history views
 - Completed work archive
@@ -54,12 +51,12 @@ No build step, server, package manager, or external dependency is required.
 
 1. Create or load a procedure.
 2. Use the rough-step composer to turn plain notes into controlled steps.
-3. Add warnings, verification, evidence requirements, tools, materials, and hold points.
+3. Add warnings, verification, evidence requirements, and hold points.
 4. Create a job traveler from the procedure.
-5. Select the asset, parts, tools, due date, priority, and assignee.
+5. Select the asset, due date, and assignee.
 6. Work through the traveler steps and capture actual notes or evidence.
 7. Generate labels or QR sheets from the job packet.
-8. Print the traveler packet or packet plus labels.
+8. Print the traveler packet or label sheet.
 9. Complete and archive the work record.
 10. Export the project JSON for backup or sharing.
 
