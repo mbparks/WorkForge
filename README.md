@@ -10,9 +10,9 @@ It combines three related ideas into one cohesive workflow:
 
 ## Current version
 
-`v2.0.1 MVP`
+`v2.1 Stabilization`
 
-This hotfix restores startup and button functionality after the v2.0 MVP build exposed initialization-order bugs.
+This release focuses on reliability after the v2.0 startup failure. It adds visible diagnostics, startup self-checks, runtime error capture, and a Settings diagnostics panel so broken initialization or missing actions are surfaced in the app instead of leaving the interface silently dead.
 
 ## How to run
 
@@ -46,6 +46,20 @@ No build step, server, package manager, or external dependency is required.
 - Completed work archive
 - Restore archived jobs
 - Clear local storage control
+
+## v2.1 stabilization additions
+
+- Startup self-check
+- Runtime error capture via a visible in-app banner
+- Settings diagnostics panel
+- Data collection validation
+- Procedure/job/label integrity checks
+- Navigation view registration check
+- Core action registration check
+- Manual “Run Self-Check” button
+- Manual “Clear Errors” button
+- Render-failure fallback message
+- Local smoke test performed before commit
 
 ## Suggested workflow
 
