@@ -22,4 +22,5 @@ if(window.WF){WF.version=WF451_VER;WF.boardDnd={states:DND_STATES,move:dndSetSta
 let oldDraw451=draw;draw=function(){oldDraw451();dndCss();$('ver').textContent=WF451_VER};
 save=function(){db.version=WF451_VER;db.schema=WF451_SCHEMA;localStorage.setItem(KEY,JSON.stringify(db));$('save').textContent='Autosaved '+new Date().toLocaleTimeString()};
 dndCss();db.schema=WF451_SCHEMA;save();draw();
+if(!window.WF_CLEANUP_LOADER){window.WF_CLEANUP_LOADER=true;let s=document.createElement('script');s.src='cleanup.js?v=4.6';document.body.appendChild(s)}
 })();
