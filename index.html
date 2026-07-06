@@ -1,52 +1,50 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Work Forge</title>
-  <link rel="stylesheet" href="style.css?v=4.6.5">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Work Forge</title>
+<link rel="stylesheet" href="style.css?v=4.6.6">
 </head>
 <body>
-  <div class="app">
-    <aside>
-      <h2>Work Forge</h2>
-      <b id="ver"></b>
-      <p class="muted">Procedure snapshots, traveler packets, scannable QR labels, and shop records.</p>
-      <button class="soft" onclick="newJob()">New Traveler</button>
-      <div id="nav" class="nav"></div>
-    </aside>
-    <main>
-      <div class="top">
-        <div>
-          <h1 id="title"></h1>
-          <p id="save" class="muted">Autosaved locally</p>
-        </div>
-        <div class="tools">
-          <button class="soft" onclick="loadSample()">Load Sample Data</button>
-          <button class="ghost" onclick="exportJSON()">Export JSON</button>
-          <button class="ghost" onclick="imp.click()">Import JSON</button>
-          <button class="ghost" onclick="document.body.classList.toggle('dark')">Dark Mode</button>
-        </div>
-      </div>
-      <input id="imp" class="hide" type="file" accept=".json" onchange="importJSON(event)">
-      <div id="view"></div>
-    </main>
-  </div>
-  <script src="runtime-guard.js?v=4.6.5"></script>
-  <script src="qr.js?v=4.6.5"></script>
-  <script src="app.js?v=4.6.5"></script>
-  <script src="assets.js?v=4.6.5"></script>
-  <script src="kitting.js?v=4.6.5"></script>
-  <script src="reports.js?v=4.6.5"></script>
-  <script src="testing.js?v=4.6.5"></script>
-  <script src="reliability.js?v=4.6.5"></script>
-  <script src="production.js?v=4.6.5"></script>
-  <script src="inventory.js?v=4.6.5"></script>
-  <script src="closeout.js?v=4.6.5"></script>
-  <script src="people.js?v=4.6.5"></script>
-  <script src="dataio.js?v=4.6.5"></script>
-  <script src="polish.js?v=4.6.5"></script>
-  <script src="board-dnd.js?v=4.6.5"></script>
-  <script src="cleanup.js?v=4.6.5"></script>
+<div class="app">
+<aside>
+<h2>Work Forge</h2>
+<b id="ver"></b>
+<p class="muted">Procedure snapshots, traveler packets, scannable QR labels, and shop records.</p>
+<button class="soft" onclick="newJob()">New Traveler</button>
+<div id="nav" class="nav"></div>
+</aside>
+<main>
+<div class="top">
+<div><h1 id="title"></h1><p id="save" class="muted">Autosaved locally</p></div>
+<div class="tools">
+<button class="soft" onclick="loadSample()">Load Sample Data</button>
+<button class="ghost" onclick="exportJSON()">Export JSON</button>
+<button class="ghost" onclick="imp.click()">Import JSON</button>
+<button class="ghost" onclick="document.body.classList.toggle('dark')">Dark Mode</button>
+</div>
+</div>
+<input id="imp" class="hide" type="file" accept=".json" onchange="importJSON(event)">
+<div id="view"></div>
+</main>
+</div>
+<script src="runtime-guard.js?v=4.6.6"></script>
+<script src="qr.js?v=4.6.6"></script>
+<script src="app.js?v=4.6.6"></script>
+<script src="assets.js?v=4.6.6"></script>
+<script src="kitting.js?v=4.6.6"></script>
+<script src="reports.js?v=4.6.6"></script>
+<script src="testing.js?v=4.6.6"></script>
+<script src="reliability.js?v=4.6.6"></script>
+<script src="production.js?v=4.6.6"></script>
+<script src="inventory.js?v=4.6.6"></script>
+<script src="closeout.js?v=4.6.6"></script>
+<script src="people.js?v=4.6.6"></script>
+<script src="dataio.js?v=4.6.6"></script>
+<script src="polish.js?v=4.6.6"></script>
+<script src="board-dnd.js?v=4.6.6"></script>
+<script src="cleanup.js?v=4.6.6"></script>
+<script src="nav-groups.js?v=4.6.6"></script>
 </body>
 </html>
