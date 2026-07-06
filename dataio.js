@@ -28,5 +28,4 @@ if(window.WF){WF.version=WF44_VER;WF.dataio={validateBackup,mergedData,pick}}
 save=function(){db.version=WF44_VER;db.schema=WF44_SCHEMA;localStorage.setItem(KEY,JSON.stringify(db));$('save').textContent='Autosaved '+new Date().toLocaleTimeString()};
 draw=function(){$('ver').textContent=WF44_VER;$('title').textContent=page;$('nav').innerHTML=P.map((p,i)=>`<button class="${page==p?'on':''}" data-i=${i}>${E(p)}</button>`).join('');document.querySelectorAll('#nav button').forEach(b=>b.onclick=()=>go(P[+b.dataset.i]));$('view').innerHTML=views[page]()};
 KEYS.forEach(k=>db[k]=Array.isArray(db[k])?db[k]:[]);db.schema=WF44_SCHEMA;save();draw();
-if(!window.WF_POLISH_LOADER){window.WF_POLISH_LOADER=true;let s=document.createElement('script');s.src='polish.js?v=4.5';document.body.appendChild(s)}
 })();
