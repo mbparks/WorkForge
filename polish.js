@@ -21,4 +21,5 @@ if(window.WF){WF.version=WF45_VER;WF.polish={toggleNav:toggleNav45,toggleDark:to
 let oldDraw45=draw;draw=function(){oldDraw45();addTopButtons45();wrapTables45();$('ver').textContent=WF45_VER};
 save=function(){db.version=WF45_VER;db.schema=WF45_SCHEMA;localStorage.setItem(KEY,JSON.stringify(db));$('save').textContent='Autosaved '+new Date().toLocaleTimeString()};
 inject45();applyPrefs();db.schema=WF45_SCHEMA;save();draw();
+if(!window.WF_BOARD_DND_LOADER){window.WF_BOARD_DND_LOADER=true;let s=document.createElement('script');s.src='board-dnd.js?v=4.5.1';document.body.appendChild(s)}
 })();
