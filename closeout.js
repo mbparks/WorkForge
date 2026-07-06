@@ -26,4 +26,5 @@ if(window.WF){WF.version=WF42_VER;WF.closeout={ensureCloseout,evidenceStatus,clo
 save=function(){db.version=WF42_VER;db.schema=WF42_SCHEMA;localStorage.setItem(KEY,JSON.stringify(db));$('save').textContent='Autosaved '+new Date().toLocaleTimeString()};
 draw=function(){$('ver').textContent=WF42_VER;$('title').textContent=page;$('nav').innerHTML=P.map((p,i)=>`<button class="${page==p?'on':''}" data-i=${i}>${E(p)}</button>`).join('');document.querySelectorAll('#nav button').forEach(b=>b.onclick=()=>go(P[+b.dataset.i]));$('view').innerHTML=views[page]()};
 db.jobs.forEach(ensureCloseout);(db.archive||[]).forEach(ensureCloseout);db.schema=WF42_SCHEMA;save();draw();
+if(!window.WF_PEOPLE_LOADER){window.WF_PEOPLE_LOADER=true;let s=document.createElement('script');s.src='people.js?v=4.3';document.body.appendChild(s)}
 })();
